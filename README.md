@@ -1,5 +1,7 @@
 # SimplerEnv-SOFAR
 
+The [SoFar](https://arxiv.org/pdf/2502.13143) manipulation evaluation for Simpler_Env.
+
 ## Installation
 
 Create an anaconda environment:
