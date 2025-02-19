@@ -3,12 +3,8 @@
 ## Installation
 
 ```bash
-conda create -n mp python=3.9
-conda activate mp
-conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1  pytorch-cuda=11.8 -c pytorch -c nvidia
-
-wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch3d/linux-64/pytorch3d-0.7.8-py39_cu118_pyt241.tar.bz2
-conda install -y --use-local ./pytorch3d-0.7.8-py39_cu118_pyt241.tar.bz2
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch3d/linux-64/pytorch3d-0.7.8-py310_cu118_pyt220.tar.bz2
+conda install -y --use-local ./pytorch3d-0.7.8-py310_cu118_pyt220.tar.bz2
 
 export CUDA_HOME=/usr/local/cuda-11.8
 git clone git@github.com:wrc042/TorchSDF.git
