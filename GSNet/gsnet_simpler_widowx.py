@@ -61,7 +61,7 @@ class GSNet():
         self.cfgs.scene = '0188'
         self.cfgs.index = '0000'
         
-    def inference(self, cloud_masked, graspness_threshold, max_grasps=500):
+    def inference(self, cloud_masked, graspness_threshold, max_grasps=5000):
         """Inference grasp from point cloud
 
         Args:
@@ -315,10 +315,10 @@ def select_grasp_poses_by_mask(gg_group, K, mask):
     """
 
     selected = []
-    height, width = mask.shape  # 图像高度和宽度
+    height, width = mask.shape  
     for i in range(len(gg_group)):
         grasp = gg_group[i]
-        pt = grasp.translation  # [x, y, z]，单位假设为米
+        pt = grasp.translation  
         proj = project_point_to_image(pt, K)
         if proj is None:
             continue
