@@ -18,6 +18,7 @@ import numpy as np
 from transforms3d.euler import quat2euler
 import open3d as o3d
 
+from simpler_sofar import sofar
 from simpler_env.utils.env.env_builder import build_maniskill2_env, get_robot_control_mode
 from simpler_env.utils.env.observation_utils import get_image_from_maniskill2_obs_dict, get_depth_from_maniskill2_obs_dict, \
                                                     get_camera_extrinsics_from_maniskill2_obs_dict, get_pointcloud_in_camera, get_base_pose
@@ -28,7 +29,7 @@ from copy import deepcopy
 from transforms3d.quaternions import mat2quat
 from scipy.spatial.transform import Rotation as R
 from SpatialAgent.depth.utils import transform_point_cloud_nohw, inverse_transform_point_cloud
-from SpatialAgent.simpler_env import sofar
+
 
 from plan.src.plan import pb_ompl
 from plan.src.utils.vis_plotly import Vis
