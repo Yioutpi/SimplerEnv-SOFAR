@@ -7,12 +7,12 @@ import json
 import warnings
 import numpy as np
 from PIL import Image
-from SpatialAgent.depth.utils import depth2pcd, transform_obj_pts
-from SpatialAgent.segmentation import sam, grounding_dino as detection
-from SpatialAgent.serve.scene_graph import get_scene_graph
-from SpatialAgent.serve.utils import generate_rotation_matrix, remove_outliers
-from SpatialAgent.serve.PointOFM import get_model as get_pointofm_model
-from SpatialAgent.serve.chatgpt import manip_parsing, manip_spatial_reasoning
+from SoFar.depth.utils import depth2pcd, transform_obj_pts
+from SoFar.segmentation import sam, grounding_dino as detection
+from SoFar.serve.scene_graph import get_scene_graph
+from SoFar.serve.utils import generate_rotation_matrix, remove_outliers
+from SoFar.serve.pointso import get_model as get_pointofm_model
+from SoFar.serve.chatgpt import manip_parsing, manip_spatial_reasoning
 warnings.filterwarnings("ignore")
 os.makedirs("output", exist_ok=True)
 
