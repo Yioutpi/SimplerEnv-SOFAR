@@ -42,7 +42,9 @@ see [SoFar](https://github.com/qizekun/SoFar) for installation instructions.
 
 **Notion:**
 
-You need modify the relative/absolute path in some files.
+You have to install GroundingDINO for the evaluation.
+
+You need modify the relative/absolute path in some files in SoFar.
 
 ## Citation
 
@@ -56,4 +58,3 @@ If you find our ideas / environments helpful, please cite our work at
   year = {2025}
 }
 ```
-
