@@ -31,30 +31,6 @@ ROBOT_JOINTS_NOFINGER_WIDOWX  = ['waist', 'shoulder', 'elbow', 'forearm_roll', '
 # ROBOT_JOINTS = ['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7', 'panda_finger_joint1', 'panda_finger_joint2']
 
 
-GALBOT_JOINTS = [
-    "leg_joint1",
-    "leg_joint2",
-    "leg_joint3",
-    "leg_joint4",
-    "head_joint1",
-    "head_joint2",
-    "left_arm_joint1",
-    "left_arm_joint2",
-    "left_arm_joint3",
-    "left_arm_joint4",
-    "left_arm_joint5",
-    "left_arm_joint6",
-    "left_arm_joint7",
-    "left_gripper",
-    "right_arm_joint1",
-    "right_arm_joint2",
-    "right_arm_joint3",
-    "right_arm_joint4",
-    "right_arm_joint5",
-    "right_arm_joint6",
-    "right_arm_joint7",
-    "right_suction_cup_joint1",
-]
 # ARM_URDF = './robot_models/franka/franka_without_gripper.urdf'
 ARM_URDF_GOOGLE_ROBOT = '/data/workspace/SimplerEnv/plan/robot_models/google_robot/google_robot_without_gripper.urdf'
 ARM_URDF_FULL_GOOGLE_ROBOT = '/data/workspace/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/assets/descriptions/googlerobot_description/ik_google_robot.urdf'
@@ -67,32 +43,6 @@ GRIPPER_HALF_WIDTH = 0.04
 
 MAX_OBJ_NUM = 20
 
-GALBOT_INIT_QPOS = np.asarray(
-            [
-                0.1,
-                1.0,
-                0.9,
-                0.0,
-                0.0,
-                0.0,
-                2.708,
-                1.56,
-                -0.1,
-                2.098,
-                1.57,
-                0.0,
-                0.8,
-                0.05,
-                -2.708,
-                -1.56,
-                0.1,
-                2.098,
-                1.57,
-                0.0,
-                0.8,
-                0.0,
-            ]
-        )
 FRANKA_INIT_QPOS = np.array([0.0, 0.22, 0.0, -1, 0.0, 1.3, 0.79, 0.0, 0.0])
 FRANKA_NEUTRAL_QPOS = np.array([-0.017792060227770554, -0.7601235411041661, 0.019782607023391807, -2.342050140544315, 0.029840531355804868, 1.5411935298621688, 0.7534486589746342, 0.0, 0.0])
 FRANKA_JOINT_LIMITS = np.array(

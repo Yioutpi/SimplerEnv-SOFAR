@@ -33,6 +33,10 @@ This code is based on [graspnet-baseline](https://github.com/graspnet/graspnet-b
 
 see [`./plan/README.md`]
 
+You need modify the checkpoint or config  path  in following files in plan:
+
+> plan/src/utils/constants.py
+
 (Acknowledge [haoranliu](https://github.com/lhrrhl0419) for the code) !!!
 The motion planning module code is based in the [ompl](https://github.com/lyfkyle/pybullet_ompl).
 
@@ -44,7 +48,7 @@ see [SoFar](https://github.com/qizekun/SoFar) for installation instructions.
 
 You have to install GroundingDINO for the evaluation.
 
-You need modify the relative/absolute path in some files in SoFar:
+You need modify the checkpoint or config  path  in following files in SoFar:
 
 > SoFar/depth/metric3dv2.py
 >
