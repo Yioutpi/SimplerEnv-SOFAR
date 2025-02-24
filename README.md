@@ -44,7 +44,15 @@ see [SoFar](https://github.com/qizekun/SoFar) for installation instructions.
 
 You have to install GroundingDINO for the evaluation.
 
-You need modify the relative/absolute path in some files in SoFar.
+You need modify the relative/absolute path in some files in SoFar:
+
+> SoFar/depth/metric3dv2.py
+>
+> SoFar/segmentation/grounding_dino.py
+>
+> SoFar/segmentation/sam.py
+>
+> SoFar/serve/pointso.py
 
 ## Citation
 
