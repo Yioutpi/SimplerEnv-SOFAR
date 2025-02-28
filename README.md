@@ -40,7 +40,7 @@ You need modify the checkpoint or config  path  in following files in plan:
 (Acknowledge [haoranliu](https://github.com/lhrrhl0419) for the code) !!!
 The motion planning module code is based in the [ompl](https://github.com/lyfkyle/pybullet_ompl).
 
-**Install SpatialAgent:**
+**Install SoFar:**
 
 see [SoFar](https://github.com/qizekun/SoFar) for installation instructions.
 
