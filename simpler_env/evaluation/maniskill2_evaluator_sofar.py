@@ -28,7 +28,7 @@ from PIL import Image
 from copy import deepcopy
 from transforms3d.quaternions import mat2quat
 from scipy.spatial.transform import Rotation as R
-from SpatialAgent.depth.utils import transform_point_cloud_nohw, inverse_transform_point_cloud
+from SoFar.depth.utils import transform_point_cloud_nohw, inverse_transform_point_cloud
 
 
 from plan.src.plan import pb_ompl
