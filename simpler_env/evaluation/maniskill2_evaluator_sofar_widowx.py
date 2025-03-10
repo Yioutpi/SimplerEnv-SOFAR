@@ -4,7 +4,7 @@ Evaluate a model on ManiSkill2 environment.
 
 # import debugpy
 # print("Waiting for debugger attach")
-# debugpy.listen(5681)
+# debugpy.listen(5687)
 # debugpy.wait_for_client()
 
 import os
@@ -29,7 +29,7 @@ from transforms3d.euler import euler2axangle
 from transforms3d.quaternions import axangle2quat, quat2axangle, mat2quat
 import json
 from scipy.spatial.transform import Rotation as R
-from SpatialAgent.depth.utils import transform_point_cloud_nohw, inverse_transform_point_cloud
+from SoFar.depth.utils import transform_point_cloud_nohw, inverse_transform_point_cloud
 from simpler_sofar import sofar
 
 from plan.src.plan import pb_ompl
@@ -346,6 +346,11 @@ def sofar_execution(images, env, obs, obs_camera_name, task_description, additio
     graspness_threshold = 0.01
     extrinsics = np.linalg.inv(np.array(extrinsics) @ np.array(base_pose))
     sce_pts_cam, sce_pts_base, obj_pts_cam, obj_pts_base, object_mask, relative_translation_table, relative_rotation_table = sofar(image, depth, intrinsic, extrinsics, task_description)
+    # np.save(os.path.join("/data/workspace/pointsofar/ReKep", f"picked_obj.npy"), sce_pts_base)
+    # Image.fromarray(image).save(os.path.join("/data/workspace/pointsofar/ReKep", f"image.png"))
+    # Image.fromarray(object_mask).save(os.path.join("/data/workspace/pointsofar/ReKep", f"mask.png"))
+    # Image.fromarray(depth).save(os.path.join("/data/workspace/pointsofar/ReKep", f"depth.png"))
+    # exit(0)
     gg_group, gg_goal_group = get_grasp_pose(task_description, intrinsic, object_mask, obj_pts_cam, sce_pts_cam, sce_pts_base, extrinsics, relative_translation_table, relative_rotation_table, graspness_threshold)
     
     init = np.array(obs['agent']['qpos'][:6]) 
