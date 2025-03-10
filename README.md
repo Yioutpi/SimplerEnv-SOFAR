@@ -37,7 +37,6 @@ You need modify the checkpoint or config  path  in following files in plan:
 
 > plan/src/utils/constants.py
 
-(Acknowledge [haoranliu](https://github.com/lhrrhl0419) for the code) !!!
 The motion planning module code is based in the [ompl](https://github.com/lyfkyle/pybullet_ompl).
 
 **Install SoFar:**
@@ -57,6 +56,11 @@ You need modify the checkpoint or config  path  in following files in SoFar:
 > SoFar/segmentation/sam.py
 >
 > SoFar/serve/pointso.py
+
+## Acknowledgement
+
+We would like to express our deepest gratitude to [haoran liu](https://github.com/lhrrhl0419) for the planning module and experiment !!!
+
 
 ## Citation
 
