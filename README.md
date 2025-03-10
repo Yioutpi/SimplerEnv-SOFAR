@@ -59,8 +59,7 @@ You need modify the checkpoint or config  path  in following files in SoFar:
 
 ## Acknowledgement
 
-We would like to express our deepest gratitude to [haoran liu](https://github.com/lhrrhl0419) for the planning module and experiment !!!
-
+We would like to express our deepest gratitude to [haoran liu](https://github.com/lhrrhl0419) for the planning module and experiments !!!
 
 ## Citation
 
