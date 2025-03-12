@@ -57,6 +57,12 @@ You need modify the checkpoint or config  path  in following files in SoFar:
 >
 > SoFar/serve/pointso.py
 
+## Execution
+
+You can run the evaluation in the script folder for different tasks:
+
+> sh scripts/sofar_bridge.sh
+
 ## Acknowledgement
 
 We would like to express our deepest gratitude to [haoran liu](https://github.com/lhrrhl0419) for the planning module and experiments !!!
