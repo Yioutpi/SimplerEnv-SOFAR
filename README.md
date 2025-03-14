@@ -1,6 +1,21 @@
-# SimplerEnv-SOFAR
+# SimplerEnv-SOFAR: The [SoFar](https://arxiv.org/pdf/2502.13143) manipulation evaluation for Simpler_Env. 
 
-The [SoFar](https://arxiv.org/pdf/2502.13143) manipulation evaluation for Simpler_Env.
+
+We present SoFar, the first 6-DoF system for spatial reasoning and robotic manipulation.
+
+We introduce the concept of semantic orientation, representing the object orientation condition on open vocabulary language.
+
+[Zekun Qi](https://qizekun.github.io/) *, [Wenyao Zhang]() *, [Yufei Ding](https://selina2023.github.io/) *, [Runpei Dong](https://runpeidong.web.illinois.edu/), [Xinqiang Yu](), [Jingwen Li](), [Lingyun Xu](), [Baoyu Li](https://baoyuli.github.io/), [Xialin He](https://xialin-he.github.io/), [Guofan Fan](https://github.com/Asterisci/), [Jiazhao Zhang](https://jzhzhang.github.io/), [Jiawei He](https://jiaweihe.com/), [Jiayuan Gu](https://jiayuan-gu.github.io/), [Xin Jin](http://home.ustc.edu.cn/~jinxustc/), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html), [Zhizheng Zhang](https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en), [He Wang](https://hughw19.github.io/) and [Li Yi](https://ericyi.github.io/).
+
+[![Project Page](https://img.shields.io/badge/Project-Page-Green.svg)](https://qizekun.github.io/sofar/)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-orange.svg)](https://arxiv.org/abs/2502.13143)
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging_Face-yellow.svg)](https://huggingface.co/collections/qizekun/sofar-67b511129d3146d28cea9920)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/DATA_LICENSE)
+
+<div style="text-align: center;">
+    <img src="SoFar/assets/teaser.jpg" width=100% >
+</div>
 
 ## Installation
 
